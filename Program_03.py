@@ -91,16 +91,16 @@
 # print(result)
 
 
-# Scope
-# Global Scope Access
-# Where Global Variables Can be Accessed
+# # Scope
+# # Global Scope Access
+# # Where Global Variables Can be Accessed
 # number = 5
 # def scope_test():
 #     number += 1 # Not Accessible Due to Function Level Scope
 # scope_test()
 
-#Handling Function Scope
-# Accessing Variables Defined in a Function
+# # Handling Function Scope
+# # Accessing Variables Defined in a Function
 # def scope_test():
 #     word = "Sobhan"
 #     return word
@@ -138,20 +138,21 @@
 # # Lists with Dictionaries
 # # Storing a Dictionary Within a List and Accessing It
 # data = ["Sobhan", "Ali", {"name": "Mehdi"}]
-# print(data[2]) # the Dictionary is in index 2
+# #print(data[2]) # the Dictionary is in index 2
 # print(data[2]["name"]) # First Access the Index, then Access the key
 
 
 # # Dictionaries with Dictionaries
 # # Storing a Dictionary within a Dictionary and Accessing It
 # data = {"team": "Perspolis", "wins": {"2018": 108, "2017": 93}}
-# print(data["wins"]) # Will output the Dictionary Within the Wins key
+# #print(data["wins"]) # Will output the Dictionary Within the Wins key
 # print(data["wins"]["2018"]) # First Access the Wins key, Then the Next key
 
 
-# # Adding New Information
-# # Adding New key/value Pairs to a Dictionary
+# Adding New Information
+# Adding New key/value Pairs to a Dictionary
 # car = {"year": 2018}
+# # print(car)
 # car["color"] = "Blue"
 # print("Year: {0} \t Color: {1}".format(car["year"], car["color"]))
 
@@ -159,7 +160,39 @@
 # # Changing Information
 # # Updating a value for a key/value pair that Already Exists
 # car = {"year": 2018, "color": "Blue"}
+# #print(car)
 # car["color"] = "Red"
 # print("Year: {0} \t Color: {1}".format(car["year"], car["color"]))
 
 
+# # Deleting Information
+# # Deleting a key/value pair from a dictionary
+# car = {"year": 2018}
+# try:
+#     del car["year"]
+#     print(car)
+# except:
+#     print("That key does not exist")
+
+
+# Looping a Dictionary
+# Looping Only Keys
+# looping over a dictionary via the keys
+# person = {"name": "Sobhan", "age": 35}
+# for key in person.keys():
+#     print(key)
+# print(person[key]) # will output the value at the current key
+
+
+# # Looping Only Values
+# # looping over a dictionary via the values
+# person = {"name": "Sobhan", "age": 35}
+# for value in person.values():
+#     print(value)
+
+
+# # Looping Key-Value Pairs
+# # looping over a dictionary via the key/value pair
+# person = {"name": "Sobhan", "age": 35}
+# for key, value in person.items():
+#     print("{0}: {1}".format(key, value))
