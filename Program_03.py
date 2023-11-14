@@ -72,3 +72,94 @@
 #     for arg in args:
 #         print(arg)
 # OutPutData("Sobhan Esmaeili", 5, True, "Alireza", 2.5)
+
+
+# # Using Return
+# # Using return keyword to return the Sum of two Numbers
+# def add_Nums(num_01, num_02):
+#     return num_01 + num_02
+# result = add_Nums(5.5, 4.5) # Saves Returned Value Into result
+# print(result)
+# print(add_Nums(10, 10)) # Doesn't Save Returned Value
+
+
+# # Ternary Operator
+# # Shorthand Syntax Using a Ternary Operator
+# def search_list(my_list, my_variable):
+#     return True if "Sobhan" in my_list else False
+# result = search_list(["Ali", "Mohammad", "Sobhan", "Reza"], 1) # result = True
+# print(result)
+
+
+# Scope
+# Global Scope Access
+# Where Global Variables Can be Accessed
+# number = 5
+# def scope_test():
+#     number += 1 # Not Accessible Due to Function Level Scope
+# scope_test()
+
+#Handling Function Scope
+# Accessing Variables Defined in a Function
+# def scope_test():
+#     word = "Sobhan"
+#     return word
+# value = scope_test()
+# print(value)
+
+
+# # Declaring a Dictionary
+# # Declaring a Dictionary Variable
+# empty = {} # Empty Dictionary
+# person = {"name": "Sobhan Esmaeili"} # Dictionary With One key/value Pair
+# customer = {"name": "Sobhan", "age": 35} # Dictionary With two key/value Pairs
+# print(customer)
+
+
+# # Accessing Dictionary Information
+# # Accessing Dictionary Information Through Keys
+# person = {"name": "Sobhan"}
+# print(person["name"]) # Access Information Through the Key
+
+
+# # Using the Get Method
+# # Using the get Method to Access Dictionary Information
+# person = {"name": "Sobhan"}
+# print(person.get("name")) # Retrieves Value of Name key as Before
+# print(person.get("age")) # Retrieves Value of Name key as Before
+# print(person.get("age", "35")) # get is a Secure Way to Retrieve Information
+
+# # Dictionaries with Lists
+# # Storing a list within a Dictionary and Accessing It
+# data = {"sports": ["baseball", "football", "hockey", "soccer"]}
+# print(data["sports"][0]) # First Access the key, then the index
+
+
+# # Lists with Dictionaries
+# # Storing a Dictionary Within a List and Accessing It
+# data = ["Sobhan", "Ali", {"name": "Mehdi"}]
+# print(data[2]) # the Dictionary is in index 2
+# print(data[2]["name"]) # First Access the Index, then Access the key
+
+
+# # Dictionaries with Dictionaries
+# # Storing a Dictionary within a Dictionary and Accessing It
+# data = {"team": "Perspolis", "wins": {"2018": 108, "2017": 93}}
+# print(data["wins"]) # Will output the Dictionary Within the Wins key
+# print(data["wins"]["2018"]) # First Access the Wins key, Then the Next key
+
+
+# # Adding New Information
+# # Adding New key/value Pairs to a Dictionary
+# car = {"year": 2018}
+# car["color"] = "Blue"
+# print("Year: {0} \t Color: {1}".format(car["year"], car["color"]))
+
+
+# # Changing Information
+# # Updating a value for a key/value pair that Already Exists
+# car = {"year": 2018, "color": "Blue"}
+# car["color"] = "Red"
+# print("Year: {0} \t Color: {1}".format(car["year"], car["color"]))
+
+
